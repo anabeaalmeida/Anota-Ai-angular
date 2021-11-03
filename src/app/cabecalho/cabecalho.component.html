@@ -1,0 +1,10 @@
+<mat-toolbar color="warn" class="position-fixed">
+    <mat-toolbar-row >
+      <span>Anota Aí!</span>
+      <span class="example-spacer"></span>
+      <span>{{this.userData.currentUserValue}}</span>
+      <span (click)="doLogout()" class="material-icons logout ">
+        login
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>

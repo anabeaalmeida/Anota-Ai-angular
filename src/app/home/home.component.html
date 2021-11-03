@@ -1,0 +1,82 @@
+<mat-tab-group mat-align-tabs="start">
+  <mat-tab label="Home">
+    <h1>
+      Bem Vindo!
+    </h1>
+    <mat-grid-list  [cols]="breakpoint"
+                    (window:resize)="onResize($event)"
+                    rowHeight="3:4">
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-header>
+
+          </mat-card-header>
+          <img mat-card-image src="assets/casa.jpg" alt="Casa">
+          <mat-card-content>
+            <h2>Em Casa</h2>
+            <p>
+              Nunca mais se esqueça de: <br>
+              <mat-icon>shopping_cart</mat-icon>
+              Fazer suas compras <br>
+              <mat-icon> local_atm</mat-icon>
+              Pagar contas e Dar Recados <br>
+              <mat-icon>event_available</mat-icon>
+              Tomar seus remédios em dia e muito mais! <br>
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+
+
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-header>
+
+          </mat-card-header>
+          <img mat-card-image src="assets/trabalho.jpg" alt="Trabalho">
+          <mat-card-content>
+            <h2>No Trabalho</h2>
+            <p>
+              Seja mais produtivo: <br>
+              <mat-icon> show_chart</mat-icon>
+              Organize suas metas <br>
+              <mat-icon>timer</mat-icon>
+              Estabeleça prazos <br>
+              <mat-icon>event_note</mat-icon>
+              Não esqueça de tarefas pendentes.<br>
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-header>
+
+          </mat-card-header>
+          <img mat-card-image src="assets/viagem.jpg" alt="Viagem">
+
+          <mat-card-content>
+            <h2>Em suas Viagens</h2>
+            <p>
+              Otimize seu lazer: <br>
+              <mat-icon> flight</mat-icon>
+              Marque o horário de sua viagem <br>
+              <mat-icon> hotel</mat-icon>
+              Período de hospedagem <br>
+              <mat-icon> local_library</mat-icon>
+              Crie seu roteiro turístico.<br>
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+  </mat-tab>
+  <mat-tab label="Criar Lembrete">
+    <app-lembrete-inserir></app-lembrete-inserir>
+  </mat-tab>
+  <mat-tab label="Meus Lembretes">
+      <app-lembrete-lista></app-lembrete-lista>
+  </mat-tab>
+</mat-tab-group>
